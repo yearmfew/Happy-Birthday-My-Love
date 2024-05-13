@@ -33,7 +33,7 @@ function playSong(songName) {
     audioElements.forEach(function (audio) {
         audio.pause();
     });
-    let audio = new Audio(`../music/${songName}.mp3`);
+    let audio = new Audio(`./music/${songName}.mp3`);
     audio.song = songName;
     // stop the other songs
     if (currentAudio) {
