@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+}
+
+.swiper {
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.heartImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.swiper-wrapper {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Circles */
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.circles {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.circle-1 {
+
+    background-color: rgb(255, 0, 191);
+    /* Animation definition */
+
+
+}
+
+.circle-2 {
+
+    background-color: rgb(255, 0, 191);
+}
+
+.circle-3 {
+
+    background-color: rgb(255, 0, 191);
+}
+
+.circle-4 {
+
+    background-color: rgb(255, 0, 191);
+}
+
+.circle-5 {
+    background-color: rgb(255, 0, 191);
+}
+
+
+@keyframes borderColorChange {
+    0% {
+        border-color: red;
+        transform: rotate(0deg);
+        /* Initial border color */
+    }
+
+    50% {
+        border-color: blue;
+        transform: rotate(180deg);
+        /* Intermediate border color */
+    }
+
+    100% {
+        border-color: yellow;
+        transform: rotate(360deg);
+        /* Final border color */
+    }
+}
